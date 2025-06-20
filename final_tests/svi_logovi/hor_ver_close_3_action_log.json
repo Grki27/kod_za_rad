@@ -1,0 +1,64 @@
+{
+  "scene_name": "Zen studio",
+  "target_object": "Pile of 3 gray stones",
+  "success": "yes",
+  "distance_from_target": 0.9,
+  "total_steps": 5,
+  "lost_target_count": 1,
+  "mark": "hvc",
+  "steps": [
+   {
+  "1.png": [
+    {
+      "action": "go left 0.5 meters",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is partially visible on the left side of the image. Moving left will help center the object in the frame while keeping it in view.",
+      "obstacles": []
+    }
+  ],
+  "2.png": [
+    {
+      "action": "go straight 0.5 meters",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is visible and slightly to the left. Moving straight will bring the drone closer to the target while keeping it in view.",
+      "obstacles": []
+    }
+  ],
+  "3.png": [
+    {
+      "action": "go up 0.5 meters",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is visible on the left side of the image, but the drone is too low to approach it directly. Moving up will help center the stones in the frame and provide a clearer path.",
+      "obstacles": [
+        {
+          "name": "table",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "4.png": [
+    {
+      "action": "go straight 0.5 meters \u2014 bad action - lost target",
+      "status": "fail",
+      "description": "The pile of 3 gray stones is visible and slightly off-center to the left. Moving straight will bring the drone closer to the target while keeping it in view.",
+      "obstacles": []
+    },
+    {
+      "action": "done",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is clearly visible, takes up a significant portion of the image, and appears extremely close with clear texture and depth detail. No further movement is necessary.",
+      "obstacles": []
+    }
+  ],
+  "5.png": [
+    {
+      "action": "target lost \u2014 return to previous position and try a different direction",
+      "status": "fail",
+      "description": "The target object, \"Pile of 3 gray stones,\" is not visible in the current image.",
+      "obstacles": []
+    }
+  ]
+}
+  ]
+}

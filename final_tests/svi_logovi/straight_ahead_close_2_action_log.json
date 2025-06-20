@@ -1,0 +1,48 @@
+{
+  "scene_name": "Zen studio",
+  "target_object": "Pile of 3 stones",
+  "success": "yes",
+  "distance_from_target": 0.1,
+  "total_steps": 3,
+  "crash_avoidance_count": 0,
+  "lost_target_count": 0,
+  "mark": "sc",
+  "steps": [
+    {
+  "1.png": [
+    {
+      "action": "go straight 1 meter",
+      "status": "ok",
+      "description": "The white milk jug is visible on the table, slightly off-center. Moving straight will bring the drone closer to the target while keeping it in view.",
+      "obstacles": [
+        {
+          "name": "chairs",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "2.png": [
+    {
+      "action": "go straight 1 meter",
+      "status": "ok",
+      "description": "The white milk jug is clearly visible and centered on the table. Moving straight will bring the drone closer to the target while keeping it in view.",
+      "obstacles": [
+        {
+          "name": "table",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "3.png": [
+    {
+      "action": "done",
+      "status": "ok",
+      "description": "The white milk jug is clearly visible, takes up a significant portion of the image, and appears extremely close with clear texture and depth details. There are no obstacles blocking the view.",
+      "obstacles": []
+    }
+  ]
+}
+  ]
+}

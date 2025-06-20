@@ -1,0 +1,30 @@
+{
+  "scene_name": "Sheldon Cooper apartment",
+  "target_object": "Telescope",
+  "success": "yes",
+  "distance_from_target": "x",
+  "total_steps": 1,
+  "lost_target_count": 1,
+  "mark": "s",
+  "steps": [
+   {
+  "1.png": [
+    {
+      "action": "target lost \u2014 return to previous position and try a different direction",
+      "status": "fail",
+      "description": "The telescope is not visible in the current image.",
+      "obstacles": [
+        {
+          "name": "desk",
+          "status": "ok"
+        },
+        {
+          "name": "cabinet",
+          "status": "ok"
+        }
+      ]
+    }
+  ]
+}
+  ]
+}

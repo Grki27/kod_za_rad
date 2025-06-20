@@ -1,0 +1,61 @@
+{
+  "scene_name": "Loft apartment",
+  "target_object": "TV",
+  "success": "yes",
+  "distance_from_target": 0.6,
+  "total_steps": 6,
+  "lost_target_count": 0,
+  "mark": "vc",
+  "steps": [
+   {
+  "1.png": [
+    {
+      "action": "go down 1 meter",
+      "status": "ok",
+      "description": "The TV is partially visible at the bottom edge of the image. Moving down will bring it more into view and closer to the center.",
+      "obstacles": []
+    }
+  ],
+  "2.png": [
+    {
+      "action": "go straight 1 meter",
+      "status": "ok",
+      "description": "The TV is clearly visible and centered in the image. Moving straight will bring the drone closer to the target.",
+      "obstacles": []
+    }
+  ],
+  "3.png": [
+    {
+      "action": "go straight 1 meter",
+      "status": "ok",
+      "description": "The TV is clearly visible and centered in the frame, but it does not yet occupy enough of the image to indicate that the drone is extremely close. Moving straight will bring the drone closer to the TV.",
+      "obstacles": []
+    }
+  ],
+  "4.png": [
+    {
+      "action": "go straight 0.5 meters",
+      "status": "ok",
+      "description": "The TV is clearly visible and centered in the frame, but it does not yet occupy enough of the image to indicate proximity. Moving forward will bring the drone closer to the TV.",
+      "obstacles": []
+    }
+  ],
+  "5.png": [
+    {
+      "action": "go down 0.5 meters",
+      "status": "ok",
+      "description": "The TV is partially visible at the top edge of the image. Moving down will help center the TV in the frame.",
+      "obstacles": []
+    }
+  ],
+  "6.png": [
+    {
+      "action": "done",
+      "status": "ok",
+      "description": "The TV is clearly visible, takes up a significant portion of the image, and appears extremely close with clear details. No further movement is necessary.",
+      "obstacles": []
+    }
+  ]
+}
+  ]
+}

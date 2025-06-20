@@ -1,0 +1,27 @@
+{
+  "scene_name": "Loft apartment",
+  "target_object": "TV",
+  "success": "crash",
+  "distance_from_target": "x",
+  "total_steps": 1,
+  "lost_target_count": 0,
+  "mark": "o",
+  "steps": [
+   {
+  "1.png": [
+    {
+      "action": "go up 1 meter",
+      "status": "crash",
+      "description": "The TV is partially visible on the left side of the image, but the view is obstructed by the stairs. Moving up will help clear the obstruction and bring the TV more into view.",
+      "obstacles": [
+        {
+          "name": "stairs",
+          "status": "ok"
+        }
+      ]
+    }
+  ]
+}
+
+  ]
+}

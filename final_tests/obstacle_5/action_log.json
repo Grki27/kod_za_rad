@@ -1,0 +1,62 @@
+{
+  "scene_name": "Sheldon Cooper apartment",
+  "target_object": "Robot toy",
+  "success": "yes",
+  "distance_from_target": 0.3,
+  "total_steps": 5,
+  "lost_target_count": 0,
+  "mark": "o",
+  "steps": [
+   {
+  "1.png": [
+    {
+      "action": "go right 1 meter",
+      "status": "ok",
+      "description": "The Robot toy is visible on the right side of the image. Moving right will bring the drone closer and help center the object in the frame.",
+      "obstacles": [
+        {
+          "name": "desk",
+          "status": "ok"
+        },
+        {
+          "name": "stool",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "2.png": [
+    {
+      "action": "go straight 1 meter",
+      "status": "ok",
+      "description": "The Robot toy is clearly visible and centered on top of the cabinet. Moving straight will bring the drone closer to the target.",
+      "obstacles": []
+    }
+  ],
+  "3.png": [
+    {
+      "action": "go up 0.5 meters",
+      "status": "ok",
+      "description": "The Robot toy is partially visible at the top of the image. Moving up will bring it more into view and help center it in the frame.",
+      "obstacles": []
+    }
+  ],
+  "4.png": [
+    {
+      "action": "go straight 0.5 meters",
+      "status": "ok",
+      "description": "The Robot toy is clearly visible and centered in the image. Moving straight will bring the drone closer to the target.",
+      "obstacles": []
+    }
+  ],
+  "5.png": [
+    {
+      "action": "done",
+      "status": "ok",
+      "description": "The Robot toy is clearly visible and centered in the frame. It appears to be less than 1 meter away, with surface details and edges defined.",
+      "obstacles": []
+    }
+  ]
+}
+  ]
+}

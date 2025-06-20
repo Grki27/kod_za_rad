@@ -1,0 +1,112 @@
+{
+  "scene_name": "Loft room",
+  "target_object": "TV",
+  "success": "yes",
+  "distance_from_target": 0.6,
+  "total_steps": 12,
+  "lost_target_count": 1,
+  "mark": "hvf",
+  "steps": [
+   {
+  "1.png": [
+    {
+      "action": "go up 1 meter \u2014 bad action - lost target",
+      "status": "fail",
+      "description": "The TV is visible at the bottom of the image. Moving up will help center it vertically in the frame.",
+      "obstacles": []
+    },
+    {
+      "action": "go right 1 meter",
+      "status": "ok",
+      "description": "The TV is partially visible on the right side of the image. Moving right will help center the TV in the frame.",
+      "obstacles": []
+    }
+  ],
+  "2.png": [
+    {
+      "action": "target lost \u2014 return to previous position and try a different direction",
+      "status": "fail",
+      "description": "The TV is not visible in the current image.",
+      "obstacles": []
+    }
+  ],
+  "3.png": [
+    {
+      "action": "go down 1 meter",
+      "status": "ok",
+      "description": "The TV is visible at the bottom of the image. Moving down will help center it vertically and bring it closer.",
+      "obstacles": []
+    }
+  ],
+  "4.png": [
+    {
+      "action": "go straight 1 meter",
+      "status": "ok",
+      "description": "The TV is visible on the right side of the image. Moving straight will bring the drone closer to the TV while keeping it in view.",
+      "obstacles": []
+    }
+  ],
+  "5.png": [
+    {
+      "action": "go down 1 meter",
+      "status": "ok",
+      "description": "The TV is visible on the right side of the image, but it is positioned higher than the center. Moving down will help center the TV vertically in the frame.",
+      "obstacles": []
+    }
+  ],
+  "6.png": [
+    {
+      "action": "go straight 1 meter",
+      "status": "ok",
+      "description": "The TV is clearly visible and centered in the frame. Moving straight will bring the drone closer to the target.",
+      "obstacles": []
+    }
+  ],
+  "7.png": [
+    {
+      "action": "go right 1 meters",
+      "status": "ok",
+      "description": "The TV is partially visible on the right side of the image. Moving right will help center the TV in the frame and bring it closer.",
+      "obstacles": [
+        {
+          "name": "stairs",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "8.png": [
+    {
+      "action": "go straight 1 meter",
+      "status": "ok",
+      "description": "The TV is clearly visible and centered in the frame. Moving straight will bring the drone closer to the target.",
+      "obstacles": []
+    }
+  ],
+  "9.png": [
+    {
+      "action": "go right 0.5 meters",
+      "status": "ok",
+      "description": "The TV is partially visible on the right side of the image. Moving right will help center the TV in the frame.",
+      "obstacles": []
+    }
+  ],
+  "10.png": [
+    {
+      "action": "go right 0.5 meters",
+      "status": "ok",
+      "description": "The TV is partially visible on the right side of the image. Moving right will help center the TV in the frame.",
+      "obstacles": []
+    }
+  ],
+  "11.png": [
+    {
+      "action": "done",
+      "status": "ok",
+      "description": "The TV is clearly visible, takes up a significant portion of the image, and appears extremely close with clear details and well-defined edges. No further movement is necessary.",
+      "obstacles": []
+    }
+  ]
+}
+  ]
+}

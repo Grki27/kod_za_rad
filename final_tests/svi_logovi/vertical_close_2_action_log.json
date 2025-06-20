@@ -1,0 +1,56 @@
+{
+  "scene_name": "High rise apartment",
+  "target_object": "Green pot plant",
+  "success": "yes",
+  "distance_from_target": 0.8,
+  "total_steps": 4,
+  "crash_avoidance_count": 0,
+  "lost_target_count": 0,
+  "mark": "vc",
+  "steps": [
+    {
+  "1.png": [
+    {
+      "action": "go up 0.5 meters",
+      "status": "ok",
+      "description": "The green pot plant is partially visible on top of the shelf. Moving up will help center the plant in the frame and bring it closer.",
+      "obstacles": []
+    }
+  ],
+  "2.png": [
+    {
+      "action": "go straight 0.5 meters",
+      "status": "ok",
+      "description": "The green pot plant is visible on the table, slightly to the left of the center. Moving straight will bring the drone closer to the target while keeping it in view.",
+      "obstacles": [
+        {
+          "name": "table",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "3.png": [
+    {
+      "action": "go straight 0.5 meters",
+      "status": "ok",
+      "description": "The green pot plant is clearly visible and centered in the image. Moving straight will bring the drone closer to the target while keeping it in view.",
+      "obstacles": [
+        {
+          "name": "table",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "4.png": [
+    {
+      "action": "done",
+      "status": "ok",
+      "description": "The green pot plant is clearly visible, takes up a significant portion of the image, and appears extremely close with clear texture and depth details. No further movement is necessary.",
+      "obstacles": []
+    }
+  ]
+}
+  ]
+}

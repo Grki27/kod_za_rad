@@ -1,0 +1,103 @@
+{
+  "scene_name": "Sheldon Cooper Apartment",
+  "target_object": "Rubic's cube",
+  "success": "lost",
+  "distance_from_target": 3.1,
+  "total_steps": 8,
+  "lost_target_count": 3,
+  "mark": "o",
+  "steps": [
+   {
+  "1.png": [
+    {
+      "action": "go right 1 meter \u2014 bad action - lost target",
+      "status": "fail",
+      "description": "The Rubik's cube is partially visible on the right side of the image. Moving right will bring it more into view and closer to the center.",
+      "obstacles": [
+        {
+          "name": "chair",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "action": "go up 1 meter",
+      "status": "ok",
+      "description": "The Rubik's cube is partially visible near the bottom center of the image. Moving up will help bring it more into view and center it in the frame.",
+      "obstacles": [
+        {
+          "name": "chair",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "2.png": [
+    {
+      "action": "target lost \u2014 return to previous position and try a different direction",
+      "status": "fail",
+      "description": "The Rubik's cube is not visible in the current image.",
+      "obstacles": [
+        {
+          "name": "couch",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "3.png": [
+    {
+      "action": "go straight 1 meter \u2014 bad action - lost target",
+      "status": "fail",
+      "description": "The Rubik's cube is visible on the table in front of the couch. Moving straight will bring the drone closer to the target while keeping it centered in the frame.",
+      "obstacles": []
+    },
+    {
+      "action": "go right 1 meter",
+      "status": "ok",
+      "description": "The Rubik's cube is partially visible on the table to the left. Moving right will help center it in the frame and bring it closer.",
+      "obstacles": [
+        {
+          "name": "couch",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "4.png": [
+    {
+      "action": "target lost \u2014 return to previous position and try a different direction",
+      "status": "fail",
+      "description": "The Rubik's cube is not visible in the current image.",
+      "obstacles": [
+        {
+          "name": "desk",
+          "status": "ok"
+        },
+        {
+          "name": "bookshelf",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "5.png": [
+    {
+      "action": "go right 1 meter \u2014 bad action - lost target",
+      "status": "fail",
+      "description": "The Rubik's cube is partially visible on the left side of the image. Moving right will help center it in the frame.",
+      "obstacles": []
+    }
+  ],
+  "6.png": [
+    {
+      "action": "target lost \u2014 return to previous position and try a different direction",
+      "status": "fail",
+      "description": "The Rubik's cube is not visible in the current image.",
+      "obstacles": []
+    }
+  ]
+}
+
+  ]
+}

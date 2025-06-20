@@ -1,0 +1,84 @@
+{
+  "scene_name": "High rise apartment",
+  "target_object": "Green pot plant",
+  "success": "yes",
+  "distance_from_target": 0.2,
+  "total_steps": 6,
+  "lost_target_count": 0,
+  "mark": "hc",
+  "steps": [
+   {
+  "1.png": [
+    {
+      "action": "go straight 0.5 meters",
+      "status": "ok",
+      "description": "The green pot plant is visible and slightly to the left. Moving straight will bring the drone closer to the plant while keeping it in view.",
+      "obstacles": [
+        {
+          "name": "couch",
+          "status": "ok"
+        },
+        {
+          "name": "table",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "2.png": [
+    {
+      "action": "go left 0.5 meters",
+      "status": "ok",
+      "description": "The green pot plant is partially visible on the left edge of the image. Moving left will bring it more into view and center it in the frame.",
+      "obstacles": [
+        {
+          "name": "couch",
+          "status": "ok"
+        },
+        {
+          "name": "table",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "3.png": [
+    {
+      "action": "go straight 0.5 meters",
+      "status": "ok",
+      "description": "The green pot plant is visible and centered on the table. Moving straight will bring the drone closer to the target.",
+      "obstacles": [
+        {
+          "name": "table",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "4.png": [
+    {
+      "action": "go straight 0.5 meters",
+      "status": "ok",
+      "description": "The green pot plant is clearly visible and centered in the image. Moving straight will bring the drone closer to the target.",
+      "obstacles": []
+    }
+  ],
+  "5.png": [
+    {
+      "action": "go left 0.5 meters",
+      "status": "ok",
+      "description": "The green pot plant is partially visible on the left edge of the image. Moving left will bring it more into view and center it in the frame.",
+      "obstacles": []
+    }
+  ],
+  "6.png": [
+    {
+      "action": "done",
+      "status": "ok",
+      "description": "The green pot plant is clearly visible, takes up a significant portion of the image, and appears extremely close with clear texture and depth details. No further movement is necessary.",
+      "obstacles": []
+    }
+  ]
+}
+  ]
+}

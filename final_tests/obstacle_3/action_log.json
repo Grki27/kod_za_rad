@@ -1,0 +1,68 @@
+{
+  "scene_name": "Loft apartment",
+  "target_object": "White milk jug",
+  "success": "yes",
+  "distance_from_target": 0.8,
+  "total_steps": 4,
+  "lost_target_count": 0,
+  "mark": "o",
+  "steps": [
+   {
+  "1.png": [
+    {
+      "action": "go up 0.5 meters",
+      "status": "ok",
+      "description": "The white milk jug is visible on the table, but the drone is currently below the table level. Moving up will bring the drone above the table, providing a clearer view and path toward the target.",
+      "obstacles": [
+        {
+          "name": "chairs",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "2.png": [
+    {
+      "action": "go left 0.5 meters",
+      "status": "ok",
+      "description": "The white milk jug is visible on the table, slightly to the left of the center. Moving left will help center the object in the frame while keeping it in view.",
+      "obstacles": [
+        {
+          "name": "table",
+          "status": "ok"
+        },
+        {
+          "name": "chairs",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "3.png": [
+    {
+      "action": "go straight 0.5 meters",
+      "status": "ok",
+      "description": "The white milk jug is visible on the table, slightly to the right of the center. Moving straight will bring the drone closer to the target while keeping it in view.",
+      "obstacles": [
+        {
+          "name": "table",
+          "status": "ok"
+        },
+        {
+          "name": "chairs",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "4.png": [
+    {
+      "action": "done",
+      "status": "ok",
+      "description": "The white milk jug is fully visible with clear details such as edges and surfaces. It seems to be less than 1 meter away indicating that no further movement is",
+      "obstacles": []
+    }
+  ]
+}
+  ]
+}

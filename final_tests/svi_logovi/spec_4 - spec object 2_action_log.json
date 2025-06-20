@@ -1,0 +1,73 @@
+{
+  "scene_name": "Sheldon Cooper apartment",
+  "target_object": "Luke Skywalker as an imperial stormtrooper",
+  "success": "lost",
+  "distance_from_target": "x",
+  "total_steps": 8,
+  "lost_target_count": 3,
+  "mark": "s",
+  "steps": [
+   {
+  "1.png": [
+    {
+      "action": "go right 1 meter",
+      "status": "ok",
+      "description": "The target object, \"Luke Skywalker as an imperial stormtrooper,\" is visible on the right side of the image. Moving right will bring the drone closer and help center the object in the frame.",
+      "obstacles": []
+    }
+  ],
+  "2.png": [
+    {
+      "action": "go right 1 meter \u2014 bad action - lost target",
+      "status": "fail",
+      "description": "The target object, \"Luke Skywalker as an imperial stormtrooper,\" is partially visible on the top of the bookshelf, slightly to the right. Moving right will help center the object in the frame.",
+      "obstacles": []
+    },
+    {
+      "action": "go up 1 meter \u2014 bad action - lost target",
+      "status": "fail",
+      "description": "The target object, \"Luke Skywalker as an imperial stormtrooper,\" is partially visible on top of the bookshelf, near the top edge of the image. Moving up will help center the object in the frame and bring it closer.",
+      "obstacles": []
+    },
+    {
+      "action": "go left 1 meter",
+      "status": "ok",
+      "description": "The target object, \"Luke Skywalker as an imperial stormtrooper,\" is partially visible on the right side of the image. Moving left will help center the object in the frame and bring it closer.",
+      "obstacles": []
+    }
+  ],
+  "3.png": [
+    {
+      "action": "target lost \u2014 return to previous position and try a different direction",
+      "status": "fail",
+      "description": "The target object, \"Luke Skywalker as an imperial stormtrooper,\" is not visible in the current image.",
+      "obstacles": []
+    }
+  ],
+  "4.png": [
+    {
+      "action": "target lost \u2014 return to previous position and try a different direction",
+      "status": "fail",
+      "description": "The target object, \"Luke Skywalker as an imperial stormtrooper,\" is not visible in the current image.",
+      "obstacles": []
+    }
+  ],
+  "5.png": [
+    {
+      "action": "go up 1 meter \u2014 bad action - lost target",
+      "status": "fail",
+      "description": "The target object, \"Luke Skywalker as an imperial stormtrooper,\" is visible on the right side of the image, near the top. Moving up will help center the object in the frame.",
+      "obstacles": []
+    }
+  ],
+  "6.png": [
+    {
+      "action": "target lost \u2014 return to previous position and try a different direction",
+      "status": "fail",
+      "description": "The target object, \"Luke Skywalker as an imperial stormtrooper,\" is not visible in the current image.",
+      "obstacles": []
+    }
+  ]
+}
+  ]
+}

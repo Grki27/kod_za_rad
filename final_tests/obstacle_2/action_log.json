@@ -1,0 +1,68 @@
+
+{
+  "scene_name": "High rise apartment",
+  "target_object": "Green pot plant",
+  "success": "crash",
+  "distance_from_target": "x",
+  "total_steps": 3,
+  "lost_target_count": 0,
+  "mark": "o",
+  "steps": [
+   {
+  "1.png": [
+    {
+      "action": "go up 0.5 meters \u2014 bad action - lost target",
+      "status": "fail",
+      "description": "The green pot plant is partially visible on the right side of the image, on a shelf. Moving up will help center the plant in the frame and bring it closer.",
+      "obstacles": [
+        {
+          "name": "table",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "action": "go straight 0.5 meters",
+      "status": "ok",
+      "description": "The green pot plant is partially visible in the distance, slightly to the right. Moving straight will bring the drone closer to the target while keeping it in view.",
+      "obstacles": [
+        {
+          "name": "table",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "2.png": [
+    {
+      "action": "target lost \u2014 return to previous position and try a different direction",
+      "status": "fail",
+      "description": "The green pot plant is not visible in the current image. The view is obstructed by a large brown object, possibly a piece of furniture, and a wall.",
+      "obstacles": [
+        {
+          "name": "couch",
+          "status": "ok"
+        },
+        {
+          "name": "wall",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "3.png": [
+    {
+      "action": "go up 0.5 meters",
+      "status": "ok",
+      "description": "The green pot plant is partially visible on the right side of the image. Moving up will help center the plant in the frame and bring it closer.",
+      "obstacles": [
+        {
+          "name": "table",
+          "status": "ok"
+        }
+      ]
+    }
+  ]
+}
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "scene_name": "Zen studio",
+  "target_object": "Pile of 3 stones",
+  "success": "yes",
+  "distance_from_target": 1,
+  "total_steps": 3,
+  "lost_target_count": 0,
+  "mark": "sc",
+  "steps": [
+   {
+  "1.png": [
+    {
+      "action": "go straight 0.5 meters",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is visible and centered, but it appears to be more than 1 meter away. Moving straight will bring the drone closer to the target.",
+      "obstacles": []
+    }
+  ],
+  "2.png": [
+    {
+      "action": "go straight 0.5 meters",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is clearly visible and centered in the image, but it still appears to be more than 1 meter away. Moving forward will bring the drone closer to the target.",
+      "obstacles": []
+    }
+  ],
+  "3.png": [
+    {
+      "action": "done",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is clearly visible, extremely close, with fine surface texture and well-defined edges. There are no obstacles blocking the view.",
+      "obstacles": []
+    }
+  ]
+}
+  ]
+}

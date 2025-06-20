@@ -1,0 +1,59 @@
+{
+  "scene_name": "Loft apartment",
+  "target_object": "TV",
+  "success": "yes",
+  "distance_from_target": 1.3,
+  "total_steps": 5,
+  "lost_target_count": 0,
+  "mark": "o",
+  "steps": [
+   {
+  "1.png": [
+    {
+      "action": "go up 1 meter",
+      "status": "ok",
+      "description": "The TV is visible on the wall but is partially obscured by the furniture in the foreground. Moving up will help bring the TV more into view and center it in the frame.",
+      "obstacles": [
+        {
+          "name": "furniture in the foreground",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "2.png": [
+    {
+      "action": "go straight 1 meter",
+      "status": "ok",
+      "description": "The TV is clearly visible and centered in the image. Moving straight will bring the drone closer to the target.",
+      "obstacles": []
+    }
+  ],
+  "3.png": [
+    {
+      "action": "go straight 1 meter",
+      "status": "ok",
+      "description": "The TV is clearly visible and slightly off-center to the left. Moving straight will bring the drone closer to the TV while keeping it in view.",
+      "obstacles": []
+    }
+  ],
+  "4.png": [
+    {
+      "action": "go straight 0.5 meters",
+      "status": "ok",
+      "description": "The TV is clearly visible and takes up a significant portion of the image, but it still appears to be more than 1 meter away. Moving straight will bring the drone closer to the TV.",
+      "obstacles": []
+    }
+  ],
+  "5.png": [
+    {
+      "action": "done",
+      "status": "ok",
+      "description": "The TV is clearly visible, takes up a significant portion of the image, and appears very close with clear details. No further movement is necessary.",
+      "obstacles": []
+    }
+  ]
+}
+
+  ]
+}

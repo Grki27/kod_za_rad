@@ -1,0 +1,51 @@
+{
+  "scene_name": "Zen studio",
+  "target_object": "Pile of 3 stones",
+  "success": "yes",
+  "distance_from_target": 0.9,
+  "total_steps": 4,
+  "lost_target_count": 0,
+  "mark": "hvc",  
+  "steps": [
+   {
+  "1.png": [
+    {
+      "action": "go left 0.5 meters",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is partially visible on the left side of the image. Moving left will help center the object in the frame while keeping it in view.",
+      "obstacles": []
+    }
+  ],
+  "2.png": [
+    {
+      "action": "go straight 0.5 meters",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is visible on the left side of the image. Moving straight will bring the drone closer to the target while keeping it in view. The path appears clear.",
+      "obstacles": []
+    }
+  ],
+  "3.png": [
+    {
+      "action": "go up 0.5 meters",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is partially visible on the left side of the image, but the view is obstructed by the bench. Moving up will help bring the stones into clearer view and center them in the frame.",
+      "obstacles": [
+        {
+          "name": "bench",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "4.png": [
+    {
+      "action": "done",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is clearly visible, takes up a significant portion of the image, and appears extremely close with clear texture and depth detail. No further movement is necessary.",
+      "obstacles": []
+    }
+  ]
+}
+
+  ]
+}

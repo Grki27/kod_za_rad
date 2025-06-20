@@ -1,0 +1,101 @@
+{
+  "scene_name": "Zen studio",
+  "target_object": "Pile of 3 gray stones",
+  "success": "yes",
+  "distance_from_target": 0.5,
+  "total_steps": 9,
+  "lost_target_count": 2,
+  "mark": "o",
+  "steps": [
+    {
+  "1.png": [
+    {
+      "action": "go straight 1 meter \u2014 bad action - lost target",
+      "status": "fail",
+      "description": "The pile of 3 gray stones is visible and centered in the frame. Moving straight will bring the drone closer to the target.",
+      "obstacles": []
+    },
+    {
+      "action": "go straight 0.5 meters",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is visible and centered in the image, but it appears to be more than 1 meter away. Moving straight will bring the drone closer to the target.",
+      "obstacles": []
+    }
+  ],
+  "2.png": [
+    {
+      "action": "target lost \u2014 return to previous position and try a different direction",
+      "status": "fail",
+      "description": "The pile of 3 gray stones is not visible in the current image.",
+      "obstacles": [
+        {
+          "name": "table",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "3.png": [
+    {
+      "action": "go straight 1 meter \u2014 bad action - lost target",
+      "status": "fail",
+      "description": "The pile of stones is visible on the table ahead. Moving straight will bring the drone closer to the target.",
+      "obstacles": [
+        {
+          "name": "table",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "action": "go up 0.5 meters",
+      "status": "ok",
+      "description": "The pile of stones is partially visible on the table, but the drone is too low to approach it directly. Moving up will help center the stones in the frame and provide a clearer view.",
+      "obstacles": [
+        {
+          "name": "table",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "4.png": [
+    {
+      "action": "target lost \u2014 return to previous position and try a different direction",
+      "status": "fail",
+      "description": "The target object, \"Pile of 3 gray stones,\" is not visible in the current image.",
+      "obstacles": [
+        {
+          "name": "table legs",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "5.png": [
+    {
+      "action": "go straight 0.5 meters",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is visible and slightly off-center to the right. Moving straight will bring the drone closer to the target while keeping it in view.",
+      "obstacles": []
+    }
+  ],
+  "6.png": [
+    {
+      "action": "go straight 0.5 meters",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is visible and centered in the image, but it is not yet extremely close. Moving straight will bring the drone closer to the target.",
+      "obstacles": []
+    }
+  ],
+  "7.png": [
+    {
+      "action": "done",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is clearly visible, takes up a significant portion of the image, and appears very close with clear texture and detail. No further movement is necessary.",
+      "obstacles": []
+    }
+  ]
+}
+]
+}

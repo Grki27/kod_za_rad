@@ -1,0 +1,85 @@
+{
+  "scene_name": "Sheldon Cooper apartment",
+  "target_object": "Mask from Halo videogame",
+  "success": "yes",
+  "distance_from_target": 0.5,
+  "total_steps": 8,
+  "lost_target_count": 1,
+  "mark": "s",
+  "steps": [
+   {
+  "1.png": [
+    {
+      "action": "go right 1 meter",
+      "status": "ok",
+      "description": "The mask from the Halo videogame is partially visible on the right side of the image, on the bookshelf. Moving right will bring the object closer and more centered in the frame.",
+      "obstacles": []
+    }
+  ],
+  "2.png": [
+    {
+      "action": "go straight 1 meter",
+      "status": "ok",
+      "description": "The Mask from the videogame Halo is visible on the bookshelf. Moving straight will bring the drone closer to the target while keeping it centered in the frame.",
+      "obstacles": [
+        {
+          "name": "desk",
+          "status": "ok"
+        },
+        {
+          "name": "computer",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "3.png": [
+    {
+      "action": "go straight 1 meter \u2014 bad action - lost target",
+      "status": "fail",
+      "description": "The mask from the videogame Halo is visible on the shelf in the background. Moving straight will bring the drone closer to the target.",
+      "obstacles": []
+    },
+    {
+      "action": "go left 1 meter",
+      "status": "ok",
+      "description": "The mask from the Halo videogame is visible on the left side of the image, on the bookshelf. Moving left will bring the drone closer and center the object in the frame.",
+      "obstacles": []
+    }
+  ],
+  "4.png": [
+    {
+      "action": "target lost \u2014 return to previous position and try a different direction",
+      "status": "fail",
+      "description": "The target object, the Mask from the videogame Halo, is not visible in the current image.",
+      "obstacles": []
+    }
+  ],
+  "5.png": [
+    {
+      "action": "go straight 1 meter",
+      "status": "ok",
+      "description": "The mask from the videogame Halo is visible on the bookshelf, slightly to the right of the center. Moving straight will bring the drone closer to the target while keeping it in view.",
+      "obstacles": []
+    }
+  ],
+  "6.png": [
+    {
+      "action": "go straight 0.5 meters",
+      "status": "ok",
+      "description": "The mask from the Halo videogame is clearly visible and centered in the image. It appears to be close, but not there yet. Moving straight will bring the drone closer to the target.",
+      "obstacles": []
+    }
+  ],
+  "7.png": [
+    {
+      "action": "done",
+      "status": "ok",
+      "description": "The mask from the Halo videogame appears centered, visible and less than 1 meters away. There appears to be no need for further movement.",
+      "obstacles": []
+    }
+  ]
+}
+
+  ]
+}

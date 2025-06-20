@@ -1,0 +1,140 @@
+{
+  "scene_name": "High rise apartment",
+  "target_object": "Green pot plant",
+  "success": "lost",
+  "distance_from_target": 2.1,
+  "total_steps": 12,
+  "crash_avoidance_count": 0,
+  "lost_target_count": 3,
+  "mark": "hvf",
+  "steps": [
+   {
+  "1.png": [
+    {
+      "action": "go straight 1 meter",
+      "status": "ok",
+      "description": "The green pot plant is visible on the table in the center of the image. Moving straight will bring the drone closer to the target while keeping it centered.",
+      "obstacles": [
+        {
+          "name": "couch",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "2.png": [
+    {
+      "action": "go left 1 meter",
+      "status": "ok",
+      "description": "The green pot plant is partially visible on the table in the center of the image. Moving left will help center the plant in the frame while keeping it in view.",
+      "obstacles": [
+        {
+          "name": "couch",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "3.png": [
+    {
+      "action": "go straight 1 meter",
+      "status": "ok",
+      "description": "The green pot plant is visible on the table in the center of the image. Moving straight will bring the drone closer to the target while keeping it centered.",
+      "obstacles": [
+        {
+          "name": "couch",
+          "status": "ok"
+        },
+        {
+          "name": "table",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "4.png": [
+    {
+      "action": "go straight 1 meter",
+      "status": "ok",
+      "description": "The green pot plant is visible on the table in the center of the image. Moving straight will bring the drone closer to the target while keeping it centered.",
+      "obstacles": [
+        {
+          "name": "couch",
+          "status": "ok"
+        },
+        {
+          "name": "table",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "5.png": [
+    {
+      "action": "go straight 1 meter",
+      "status": "ok",
+      "description": "The green pot plant is visible on the table in the center of the image. Moving straight will bring the drone closer to the target while keeping it centered.",
+      "obstacles": [
+        {
+          "name": "table",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "6.png": [
+    {
+      "action": "go straight 1 meter \u2014 bad action - lost target",
+      "status": "fail",
+      "description": "The green pot plant is visible and centered in the lower part of the image. Moving straight will bring the drone closer to the target.",
+      "obstacles": []
+    },
+    {
+      "action": "go left 0.5 meters",
+      "status": "ok",
+      "description": "The green pot plant is partially visible at the bottom center of the image. Moving left will help center it in the frame.",
+      "obstacles": []
+    }
+  ],
+  "7.png": [
+    {
+      "action": "target lost \u2014 return to previous position and try a different direction",
+      "status": "fail",
+      "description": "The green pot plant is not visible in the current image.",
+      "obstacles": []
+    }
+  ],
+  "8.png": [
+    {
+      "action": "go straight 0.5 meters \u2014 bad action - lost target",
+      "status": "fail",
+      "description": "The green pot plant is visible and centered at the bottom of the image. Moving straight will bring the drone closer to the target while keeping it in view.",
+      "obstacles": []
+    },
+    {
+      "action": "go straight 0.3 meters \u2014 bad action - lost target",
+      "status": "fail",
+      "description": "The green pot plant is visible in the center of the image, but it is still far away. Moving straight will bring the drone closer to the target while keeping it centered.",
+      "obstacles": []
+    }
+  ],
+  "9.png": [
+    {
+      "action": "target lost \u2014 return to previous position and try a different direction",
+      "status": "fail",
+      "description": "The green pot plant is not visible in the current image.",
+      "obstacles": []
+    }
+  ],
+  "10.png": [
+    {
+      "action": "go straight 1 meter \u2014 bad action - lost target",
+      "status": "fail",
+      "description": "The green pot plant is partially visible at the bottom center of the image. Moving straight will bring the drone closer and help center the plant in the frame.",
+      "obstacles": []
+    }
+  ]
+  
+}
+  ]
+}

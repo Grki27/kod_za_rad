@@ -1,0 +1,79 @@
+{
+  "scene_name": "Zen studio",
+  "target_object": "Pile of 3 stones",
+  "success": "yes",
+  "distance_from_target": 0.9,
+  "total_steps": 8,
+  "lost_target_count": 2,
+  "mark": "o",
+  "steps": [
+   {
+  "1.png": [
+    {
+      "action": "go straight 1 meter \u2014 bad action - lost target",
+      "status": "fail",
+      "description": "The pile of 3 gray stones is visible on the table ahead. Moving straight will bring the drone closer to the target while keeping it centered in the frame.",
+      "obstacles": []
+    },
+    {
+      "action": "go straight 0.5 meters",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is visible and centered in the image. Moving straight will bring the drone closer to the target.",
+      "obstacles": []
+    }
+  ],
+  "2.png": [
+    {
+      "action": "target lost \u2014 return to previous position and try a different direction",
+      "status": "fail",
+      "description": "The pile of 3 gray stones is not visible in the current image.",
+      "obstacles": [
+        {
+          "name": "table",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "3.png": [
+    {
+      "action": "go straight 1 meter \u2014 bad action - lost target",
+      "status": "fail",
+      "description": "The pile of 3 gray stones is visible on the bench ahead. Moving straight will bring the drone closer to the target.",
+      "obstacles": []
+    },
+    {
+      "action": "go up 0.5 meters",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is visible but partially obscured by the bench. Moving up will provide a clearer view and help center the object in the frame.",
+      "obstacles": []
+    }
+  ],
+  "4.png": [
+    {
+      "action": "target lost \u2014 return to previous position and try a different direction",
+      "status": "fail",
+      "description": "The pile of 3 gray stones is not visible in the current image.",
+      "obstacles": []
+    }
+  ],
+  "5.png": [
+    {
+      "action": "go straight 0.5 meters",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is visible and centered in the image, but it is still some distance away. Moving straight will bring the drone closer to the target.",
+      "obstacles": []
+    }
+  ],
+  "6.png": [
+    {
+      "action": "done",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is clearly visible, takes up a significant portion of the image, and appears very close with clear texture and detail. No further movement is necessary.",
+      "obstacles": []
+    }
+  ]
+}
+
+  ]
+}

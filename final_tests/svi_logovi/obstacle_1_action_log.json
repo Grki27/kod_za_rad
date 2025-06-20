@@ -1,0 +1,26 @@
+{
+  "scene_name": "High rise apartment",
+  "target_object": "Green pot plant",
+  "success": "crash",
+  "distance_from_target": "x",
+  "total_steps": 1,
+  "lost_target_count": 0,
+  "mark": "o",
+  "steps": [
+   {
+  "1.png": [
+    {
+      "action": "go up 0.5 meters",
+      "status": "crash",
+      "description": "The green pot plant is partially visible on top of the shelf. Moving up will bring it more into view and help center it in the frame.",
+      "obstacles": [
+        {
+          "name": "table",
+          "status": "ok"
+        }
+      ]
+    }
+  ]
+}
+  ]
+}

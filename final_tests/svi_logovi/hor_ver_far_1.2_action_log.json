@@ -1,0 +1,103 @@
+
+{
+  "scene_name": "Zen studio",
+  "target_object": "Pile of 3 stones",
+  "success": "yes",
+  "distance_from_target": 1,
+  "total_steps": 11,
+  "lost_target_count": 0,
+  "mark": "hvf",
+  "steps": [
+   {
+  "1.png": [
+    {
+      "action": "go left 1 meter",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is visible on the left side of the image. Moving left will bring the drone closer to the target and help center it in the frame.",
+      "obstacles": []
+    }
+  ],
+  "2.png": [
+    {
+      "action": "go straight 1 meter",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is visible on the low table against the wall. Moving straight will bring the drone closer to the target while keeping it centered in the frame.",
+      "obstacles": []
+    }
+  ],
+  "3.png": [
+    {
+      "action": "go left 1 meter",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is visible on the left side of the image. Moving left will help center the object in the frame.",
+      "obstacles": []
+    }
+  ],
+  "4.png": [
+    {
+      "action": "go straight 1 meter",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is visible on the left side of the image. Moving straight will bring the drone closer to the target while keeping it centered.",
+      "obstacles": []
+    }
+  ],
+  "5.png": [
+    {
+      "action": "go straight 1 meter",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is visible on the left side of the bench. Moving straight will bring the drone closer to the target while keeping it in view.",
+      "obstacles": []
+    }
+  ],
+  "6.png": [
+    {
+      "action": "go straight 1 meter",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is clearly visible on the left side of the image. Moving straight will bring the drone closer to the target while keeping it centered.",
+      "obstacles": []
+    }
+  ],
+  "7.png": [
+    {
+      "action": "go left 0.5 meters",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is partially visible on the left side of the image. Moving left will help center the object in the frame.",
+      "obstacles": []
+    }
+  ],
+  "8.png": [
+    {
+      "action": "go straight 0.5 meters",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is visible and centered in the image. Moving straight will bring the drone closer to the target.",
+      "obstacles": []
+    }
+  ],
+  "9.png": [
+    {
+      "action": "go down 0.5 meters",
+      "status": "ok",
+      "description": "The pile of gray stones is partially visible at the bottom of the image. Moving down will help center the object in the frame.",
+      "obstacles": []
+    }
+  ],
+  "10.png": [
+    {
+      "action": "go straight 0.5 meters",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is clearly visible and centered in the image. Moving straight will bring the drone closer to the target.",
+      "obstacles": []
+    }
+  ],
+  "11.png": [
+    {
+      "action": "done",
+      "status": "ok",
+      "description": "The pile of 3 gray stones is clearly visible, takes up a significant portion of the image, and appears extremely close with clear texture and detail. No further movement is necessary.",
+      "obstacles": []
+    }
+  ]
+}
+
+  ]
+}

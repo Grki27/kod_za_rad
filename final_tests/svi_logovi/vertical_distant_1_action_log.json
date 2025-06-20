@@ -1,0 +1,77 @@
+{
+  "scene_name": "Loft apartment",
+  "target_object": "TV",
+  "success": "crash",
+  "distance_from_target": "x",
+  "total_steps": 8,
+  "lost_target_count": 0,
+  "mark": "vd",
+  "steps": [
+   {
+  "1.png": [
+    {
+      "action": "go straight 2 meters",
+      "status": "ok",
+      "description": "The TV is clearly visible and centered in the image. Moving straight will bring the drone closer to the target.",
+      "obstacles": []
+    }
+  ],
+  "2.png": [
+    {
+      "action": "go down 1 meter",
+      "status": "ok",
+      "description": "The TV is partially visible at the bottom edge of the image. Moving down will bring it more into view and help center it.",
+      "obstacles": []
+    }
+  ],
+  "3.png": [
+    {
+      "action": "go straight 1 meter",
+      "status": "ok",
+      "description": "The TV is clearly visible and centered in the image. Moving straight will bring the drone closer to the target.",
+      "obstacles": []
+    }
+  ],
+  "4.png": [
+    {
+      "action": "go straight 1 meter",
+      "status": "ok",
+      "description": "The TV is clearly visible and centered in the frame, but it does not yet occupy enough of the image to indicate proximity. Moving straight will bring the drone closer to the TV.",
+      "obstacles": []
+    }
+  ],
+  "5.png": [
+    {
+      "action": "go down 0.5 meters",
+      "status": "ok",
+      "description": "The TV is partially visible at the top of the image. Moving down will help center it in the frame.",
+      "obstacles": []
+    }
+  ],
+  "6.png": [
+    {
+      "action": "go right 0.5 meters",
+      "status": "ok",
+      "description": "The TV is partially visible on the left side of the image. Moving right will help center the TV in the frame.",
+      "obstacles": []
+    }
+  ],
+  "7.png": [
+    {
+      "action": "go right 0.5 meters",
+      "status": "ok",
+      "description": "The TV is partially visible on the left edge of the image. Moving right will help center the TV in the frame.",
+      "obstacles": []
+    }
+  ],
+  "8.png": [
+    {
+      "action": "go right 0.5 meters",
+      "status": "crash",
+      "description": "The TV is partially visible on the left edge of the image. Moving right will help center the TV in the frame.",
+      "obstacles": []
+    }
+  ]
+}
+  ]
+}

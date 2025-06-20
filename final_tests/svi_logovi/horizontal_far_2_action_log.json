@@ -1,0 +1,87 @@
+{
+  "scene_name": "Loft apartment",
+  "target_object": "TV",
+  "success": "yes",
+  "distance_from_target": 1.5,
+  "total_steps": 9,
+  "crash_avoidance_count": 0,
+  "lost_target_count": 2,
+  "mark": "hf",
+  "steps": [
+   {
+  "1.png": [
+    {
+      "action": "go straight 2 meters",
+      "status": "ok",
+      "description": "The TV is clearly visible and centered in the image. Moving straight will bring the drone closer to the target without any visible obstacles in the direct path.",
+      "obstacles": []
+    }
+  ],
+  "2.png": [
+    {
+      "action": "go straight 1 meter \u2014 bad action - lost target",
+      "status": "fail",
+      "description": "The TV is partially visible on the left side of the image. Moving straight will help center the TV in the frame and bring it closer.",
+      "obstacles": []
+    },
+    {
+      "action": "go left 1 meter",
+      "status": "ok",
+      "description": "The TV is partially visible on the left side of the image. Moving left will help center the TV in the frame and bring it closer.",
+      "obstacles": []
+    }
+  ],
+  "3.png": [
+    {
+      "action": "target lost \u2014 return to previous position and try a different direction",
+      "status": "fail",
+      "description": "The TV is not visible in the current image, so the target is considered lost.",
+      "obstacles": [
+        {
+          "name": "wall",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "4.png": [
+    {
+      "action": "go straight 1 meter \u2014 bad action - lost target",
+      "status": "fail",
+      "description": "The TV is clearly visible on the left side of the image. Moving straight will bring the drone closer to the TV and help center it in the frame.",
+      "obstacles": []
+    },
+    {
+      "action": "go straight 0.5 meters",
+      "status": "ok",
+      "description": "The TV is clearly visible on the left side of the image. Moving straight will bring the drone closer to the TV while keeping it in view.",
+      "obstacles": []
+    }
+  ],
+  "5.png": [
+    {
+      "action": "target lost \u2014 return to previous position and try a different direction",
+      "status": "fail",
+      "description": "The TV is not visible in the current image.",
+      "obstacles": []
+    }
+  ],
+  "6.png": [
+    {
+      "action": "go left 0.5 meters",
+      "status": "ok",
+      "description": "The TV is partially visible on the left side of the image. Moving left will help center the TV in the frame and bring it closer.",
+      "obstacles": []
+    }
+  ],
+  "7.png": [
+    {
+      "action": "done",
+      "status": "ok",
+      "description": "The TV is clearly visible, takes up a significant portion of the image, and appears very close with clear details. There are no obstacles blocking the view.",
+      "obstacles": []
+    }
+  ]
+}
+  ]
+}
